@@ -182,7 +182,7 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
    var numDisplayed = 0;
    var tocTable = '';
-   var tocHead1 = '<div class="ijo"><center>Judul Buku</center></div>';
+   var tocHead1 = '↑↓ Nama File Buku';
    var tocTool1 = 'Click to sort by title';
    var tocHead2 = '↑↓ Urutkan Berdasar Tanggal Upload';
    var tocTool2 = 'Click to sort by date';
