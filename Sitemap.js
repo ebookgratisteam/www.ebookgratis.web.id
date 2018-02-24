@@ -182,12 +182,10 @@ function displayToc(filter) {
 // this function creates a three-column table and adds it to the screen
    var numDisplayed = 0;
    var tocTable = '';
-   var tocHead1 = '↑↓ Urutkan Berdasar Judul Buku';
+   var tocHead1 = '<div class="ijo"><center>Judul Buku</center></div>';
    var tocTool1 = 'Click to sort by title';
    var tocHead2 = '↑↓ Urutkan Berdasar Tanggal Upload';
    var tocTool2 = 'Click to sort by date';
-   var tocHead3 = '↑↓ Urutkan Berdasar Category';
-   var tocTool3 = '';
    if (sortBy == "titleasc") { 
       tocTool1 += ' (descending)';
       tocTool2 += ' (newest first)';
@@ -210,13 +208,11 @@ function displayToc(filter) {
    tocTable += '<table>';
    tocTable += '<tr>';
    tocTable += '<td class="toc-header-col1">';
-   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
+   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + 
+      + '</a>';
    tocTable += '</td>';
    tocTable += '<td class="toc-header-col2">';
    tocTable += '<a href="javascript:toggleDateSort();" title="' + tocTool2 + '">' + tocHead2 + '</a>';
-   tocTable += '</td>';
-   tocTable += '<td class="toc-header-col3">';
-   tocTable += '<a href="javascript:allPosts();" title="' + tocTool3 + '">' + tocHead3 + '</a>';
    tocTable += '</td>';
    tocTable += '</tr>';
    for (var i = 0; i < postTitle.length; i++) {
