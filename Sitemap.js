@@ -208,8 +208,7 @@ function displayToc(filter) {
    tocTable += '<table>';
    tocTable += '<tr>';
    tocTable += '<td class="toc-header-col1">';
-   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + 
-      + '</a>';
+   tocTable += '<a href="javascript:toggleTitleSort();" title="' + tocTool1 + '">' + tocHead1 + '</a>';
    tocTable += '</td>';
    tocTable += '<td class="toc-header-col2">';
    tocTable += '<a href="javascript:toggleDateSort();" title="' + tocTool2 + '">' + tocHead2 + '</a>';
